@@ -1,0 +1,48 @@
+* {
+	font-family: sans-serif;
+	/*'Roboto Condensed', */
+}
+
+.btn {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 8px 25px 8px 25px;
+	border-radius: 3px;
+	border-style: solid;
+}
+
+.btn:hover {
+	color: black;
+	background-color: rgba(0, 191, 255, 0);
+	cursor: pointer;
+}
+
+.btn-blue { 
+	background-color: deepskyblue;
+	color: white;
+	border-color: deepskyblue;
+}
+
+.form-block {
+
+}
+
+.form-block label {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form-block input {
+	border: solid 1px grey;
+	padding-left: 5px;
+	padding-right: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 3px; 
+}
+
+.form-block input[type="email"]:focus {
+	border: 1px solid #33C3F0;
+    outline: 0;
+}

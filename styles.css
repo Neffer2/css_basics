@@ -1,0 +1,166 @@
+#titulo {
+	color: tomato;
+}
+
+.especial {
+	font-style: italic;
+}
+
+/*p.texto {
+	color: white;
+}*/
+
+div {
+	background-color: gray;
+}
+
+/*div p {
+	font-weight: bold;
+	color: seagreen;
+}*/
+
+div	h2 {
+	color: brown;
+}
+
+div	h4 {
+	color: blue;
+}
+
+* {
+	font-size: 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.color {
+	/*border: 20px rgb(255, 14, 65) groove;*/
+	border: .5em; /* relativo a dos veces el tamaño de la fuente utilizada en ese elemento*/
+	border-style: solid;
+	border-radius: 5px;
+	border-color: violet;
+}
+
+.rem {
+	/*border: 20px rgb(255, 14, 65) groove;*/
+	border: 1rem; /* relativo a el tamaño de la fuente utilizada en la raiz (16 px por defecto)*/
+	border-style: solid;
+	border-radius: 5px;
+	border-color: violet;
+	opacity: 0.5;
+}
+
+#fondo {
+	color: #fff;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0); /* Color con opacidad (1 maxima opacidad 0 minima) */
+	background-image: url(https://www.tuningblog.eu/wp-content/uploads/2021/11/Sterckenn-Frontsplitter-Mercedes-AMG-A45-S-W177-Tuning-Bodykit-Carbon-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-size: auto;*/ /* Valor por defecto */
+	/*background-size: cover;*/ /* Crea una imagen proporsional al tamaño de la pantalla */
+	/*background-size: contain;*/ /* Contiene la imagen dentro de las dimensions dadas */
+	/*background-size: 200px 200px;*/  /* Dimenisones Alto y ancho */
+	/*background-position: left center;*/ /* X, Y */
+}
+
+.margen {
+	background-color: chocolate;
+	margin: 20px; /* Arriba abaja izquierda derezha */ 
+	padding: 10px; /* Arriba abaja izquierda derezha */ 
+	border: 5px solid;
+	width: 200px;
+	height: 300px;
+	overflow: scroll;
+	outline: 5px solid red;
+}
+
+.texto {
+	font-size: 32px;
+	background-color: gray;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 1px black; /* derecha, abajo, difuminado */
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: center;
+	border: solid 2px black;
+}
+
+th {
+	background-color: salmon;
+	padding: 8px;
+}
+
+tr:nth-child(even){
+	background-color: silver;
+}
+
+tr:hover {
+	background-color: lightslategray;
+	cursor: pointer;
+}
+
+/*  Display: block (salto de línea) inline-block (seguido) */
+
+.inline {
+	display: inline-block;
+}
+
+span {
+	display: block;
+	max-width: 400px; /* Se empequeñece junto con la pantalla */
+	background-color: rosybrown;
+}
+
+/* Position */
+
+/*
+ static: por defecto;
+ relative: relativa a donde debería estar el elemento (left, rigth, top, bottom);
+ fixed: se mueve junto con la pantalla (como del header que se queda pegado);
+ absolute: se posiciona relativo al elemento que tenga. Si no tiene, toma <body> como referencia;
+ sticky: quietecito hasta que la pantalla baja, después se queda pegada como fixed;
+
+*/
+
+.position {
+	position: sticky;
+	top: 20px; 
+}
+
+/* Float mueve los elementos a la izquierda o derecha. Si hay mas de un eelemento con float, 
+se van apialndo a la izquierda o derecha */
+
+.container {
+	height: 300px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.container img {
+	height: 300px;
+	padding: 20px;
+}
+
+.container h2 {
+	text-align: left;
+	padding: 20px;
+}
+
+.card {
+	margin: 8px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
