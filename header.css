@@ -14,8 +14,8 @@ body {
 .header-brand {
 	cursor: pointer;
 	display: inline-block;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 40px;
 	padding-right: 300px;
 	border-radius: 30px;
@@ -42,16 +42,18 @@ body {
 	padding: 20px;
 	margin-left: 50px;
 	margin-right: 50px;
-	border-radius: 30px;
+	border-radius: 10px;
 	font-weight: bold;
 	background-color: gold;
 	box-shadow: -4px 5px rgb(230, 195, 0);
+	transition: box-shadow 2s;
 }
 
 .header-menu button:hover {
 	box-shadow: none;
-}
+} 
 
 .header-menu button:active {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
 }
+

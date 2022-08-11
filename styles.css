@@ -105,10 +105,10 @@ tr:hover {
 	cursor: pointer;
 }
 
-/*  Display: block (salto de línea) inline-block (seguido) */
+/*  Display: block (salto de línea) inline/inline-block (seguido) */
 
 .inline {
-	display: inline-block;
+	display: inline-block; /*Inline block permite poner ancho y alto. Inline, no*/ 
 }
 
 span {
@@ -144,7 +144,7 @@ se van apialndo a la izquierda o derecha */
 	float: left;
 }
 
-.right {
+.right { 
 	float: right;
 }
 
@@ -163,4 +163,18 @@ se van apialndo a la izquierda o derecha */
 	background-color: white;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+.column {
+	background-color: white;
+	border-radius: 5px;
+	width: 33.3%;
+}
+
+.center {
+	text-align: center;
+	padding: 40px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: aqua;
 }
