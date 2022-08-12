@@ -8,10 +8,14 @@
 	border: 15px solid;
 	border-color: darkgrey;
 	margin: 15px;
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 200px;
 	display: flex;
-	flex-direction: row; /* row: filas, row-reverse: izq-rev, colum:  columnas, column-reverse: columna reveresa. */
+
+	/* flex-direction: row; */ /* row: filas, row-reverse: izq-rev, colum:  columnas, column-reverse: columna reveresa. */
+	/* flex-wrap: wrap; */ /* wrap: acmoda abajo si no cabe, nowrap: todos los elementos ocupan el 100%, wrap-reverse los mismo pero al revèz  */
+	/* flex-flow: row wrap; */	/* atajo  */
+	justify-content: flex-start;
 }
 
 .card {
@@ -20,7 +24,7 @@
 	border: none;
 	background-color: white;
 	padding: 10px;
-	margin: auto;
+	margin: 10px;
 	text-align: center;
 	vertical-align: top;
 	width: 50px;
