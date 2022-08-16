@@ -28,13 +28,14 @@ body {
 
 .card {
 	/*display: grid;*/
+	flex-grow: 1;
 	border: 1px solid;
 	border: none;
 	background-color: white;
 	padding: 10px;
-	margin: 10px;
+	margin: 1px;
 	text-align: center; 
-	width: 50px;
+	flex-basis: 50px; /* sinonimo de width o heigth si flex direction es row o colum respectivamente. */
 	height: 50px;
 }
 
