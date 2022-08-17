@@ -11,12 +11,12 @@ body {
 	background-color: darkorange;
 	/*border: 15px solid;*/
 	border-color: darkgrey;
-	width: 30%;
+	width: 50%;
 	height: auto;
 	display: flex; 
  	flex-direction: row;  /* row: filas, row-reverse: izq-rev, colum:  columnas, column-reverse: columna reveresa. */
 	flex-wrap: wrap;  /* wrap: acmoda abajo si no cabe, nowrap: todos los elementos ocupan el 100%, wrap-reverse los mismo pero al revèz  */
-	/* flex-flow: row wrap; */	/* atajo  */
+	/* flex-flow: row wrap; */	/* atajo  */ 
 	justify-content: center; /*Start, end, center, space-round: distribuye por tood el ancho con espaciados.*/
 									/*space-between: distribuye como round, pero sin margen a los lados (util para headers).*/
 	/*align-items: center;*/ /*Alineacion vertical start, end, center, stretch: alarga los items hasta abajo (solo funciona con hetig auto) */								
@@ -28,15 +28,39 @@ body {
 
 .card {
 	/*display: grid;*/
-	flex-grow: 1;
+
+	/*flex-grow: 1;*/ /* Asigna el mismo tamaño a todos los elementos para que ocupen el 100%.*/
+	/*Es distinto al no-wrap, porque los elementos cambian de tamaño segun el número */
+	/* Además, flex-grow: 2,3,4; toma como referencia un objeto y lo duplica, triplica, etc.*/
+
+
+	/*flex-shrink: 1;*/ /* Asigna el mismo tamaño a todos los elementos para que ocupen el 100%.*/
+	/*Es distinto al no-wrap, porque los elementos cambian de tamaño segun el número */
+	/* Además, flex-shrink: 2,3,4; toma como referencia un objeto y lo duplica, triplica, etc.*/
+	/* flex-grow agranda, flex-shrink encoge */ 
+
+	/*flex: 1;*/ /* atajo para flex-grow: 1; y flex-shrink: 1;*/
+
 	border: 1px solid;
 	border: none;
 	background-color: white;
 	padding: 10px;
-	margin: 1px;
+	margin: 10px;
 	text-align: center; 
 	flex-basis: 50px; /* sinonimo de width o heigth si flex direction es row o colum respectivamente. */
 	height: 50px;
+}
+
+.card2 {
+	/*flex: 1;*/ /* atajo para flex-grow: 1; y flex-shrink: 1;*/
+	align-self: flex-end; /*Acomoda solo un elemento*/
+	border: 1px solid;
+	border: none;
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	text-align: center; 
+	flex-basis: 50px; /* sinonimo de width o heigth si flex direction es row o colum respectivamente. */
 }
 
 .card:hover {
