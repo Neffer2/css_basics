@@ -4,45 +4,70 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="game.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 	<title>Ahorcado | Game</title>
 </head>
 <body>
+	<audio id="sound">
+		<source src="btn_effect.wav" muted="muted">
+			Tu navegador no soporta este tipo de recurso.
+	</audio>
+
 	<div class="title">
 		<h2>!QUE COMIENCE EL JUEGO! 👾</h2>
 	</div>
-	<div class="container">
+	<div class="container"> 
 		<div class="screen"></div>
+
 		<div class="letters">
-			<button>Iniciar</button>
+			<!-- <button>Iniciar</button> -->
 			<div class="button-container">
-				<button class="button-letter">A</button>			 
-				<button class="button-letter">B</button>			 
-				<button class="button-letter">C</button>			 
-				<button class="button-letter">D</button>			 
+				<button class="button-letter">Q</button>			 
+				<button class="button-letter">W</button>			 
 				<button class="button-letter">E</button>			 
+				<button class="button-letter">R</button>			 
+				<button class="button-letter">T</button>			 
+				<button class="button-letter">Y</button>			 
+				<button class="button-letter">U</button>			 
+				<button class="button-letter">I</button>			 
+				<button class="button-letter">O</button>			 
+				<button class="button-letter">P</button>			 
+				<button class="button-letter">A</button>			 
+				<button class="button-letter">S</button>			 
+				<button class="button-letter">D</button>			 
 				<button class="button-letter">F</button>			 
 				<button class="button-letter">G</button>			 
-				<button class="button-letter">I</button>			 
+				<button class="button-letter">H</button>			 
 				<button class="button-letter">J</button>			 
 				<button class="button-letter">K</button>			 
 				<button class="button-letter">L</button>			 
-				<button class="button-letter">M</button>			 
-				<button class="button-letter">N</button>			 
 				<button class="button-letter">Ñ</button>			 
-				<button class="button-letter">O</button>			 
-				<button class="button-letter">P</button>			 
-				<button class="button-letter">Q</button>			 
-				<button class="button-letter">R</button>			 
-				<button class="button-letter">S</button>			 
-				<button class="button-letter">T</button>			 
-				<button class="button-letter">U</button>			 
-				<button class="button-letter">V</button>			 
-				<button class="button-letter">W</button>			 
+				<button class="button-letter">Z</button>			 
 				<button class="button-letter">X</button>			 
-				<button class="button-letter">Y</button>			 
-				<button class="button-letter">Z</button>
+				<button class="button-letter">C</button>			 
+				<button class="button-letter">V</button>			 
+				<button class="button-letter">B</button>			 
+				<button class="button-letter">N</button>
+				<button class="button-letter">M</button>
+				<!--  -->
+				<button class="button-letter">Pista</button>
+				<button class="button-letter">Nueva palabra</button>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		let btn_elems = document.getElementsByClassName('button-letter');
+		let audio = document.getElementById('sound')
+
+		cont = 0;
+		while (cont < btn_elems.length){
+			btn_elems[cont].addEventListener('mouseover', (params) => {
+				audio.play();
+			})
+			cont++;
+		}
+	</script>
 </body>
 </html>

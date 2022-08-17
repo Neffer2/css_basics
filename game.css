@@ -1,5 +1,6 @@
 * {
-	font-family: fantasy;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: ghostwhite; 
 }
 
 .title {
@@ -7,43 +8,58 @@
 	text-align: center;
 }
 .container {
-	padding: 50px;
-	background-color: ghostwhite;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	/*align-content: center;*/
+	align-content: center; 
 }
 
 .screen {
-	flex-grow: 1;
-	padding: 20px;
-	background-image: url("https://img.fortawesome.com/349cfdf6/fontawesome-open-graph.png");
-	background-size: cover;
+	height: 250px;
+	width: 100%;
+	background-image: url("https://thumbs.gfycat.com/PettySlowEthiopianwolf-size_restricted.gif");
+	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 } 
 
 .letters {
-	flex-grow: 1;
+	height: 250px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;	
-	justify-content: space-around;
+	justify-content: center;
 	align-content: center;
 }
 
 .button-container {
-	width: 50%;
-	border: 5px solid;
+	flex-basis: 100px;
+	width: 330px;
+	padding: 5px;
+	border: 5px outset saddlebrown;
+	background-image: url("https://thumbs.dreamstime.com/b/textura-de-madera-pino-fondo-ilustraci%C3%B3n-del-vector-ejemplo-142891975.jpg");
+	/*background-size: contain;*/
+	/*background-color: peru;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
 }
 
 .button-letter {
-	/*flex-grow: 1;*/
-	height: 50px;
+	flex-grow: 1;
 	padding: 10px;
 	margin: 2px;
 	background-color: cornsilk;
-	box-shadow: 3px 3px brown;
+	box-shadow: 2px 2px saddlebrown;
 	border-radius: 5px; 
+}
+
+.button-letter:hover {
+	cursor: pointer;
+	background-color: saddlebrown;
 }
