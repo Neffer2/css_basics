@@ -16,14 +16,15 @@
 				<h2>FontPair</h2>
 			</div>
 		</div>
+		<a class="menu-toggle" href="#"><i class="fa-solid fa-angle-down"></i></a>
 		<div class="header-menu">
-			<a href="">Fonts</a>
-			<a href="">Pairing</a>
-			<a href="">Font Categories</a>
+			<a href="#">Fonts</a>
+			<a href="#">Pairing</a>
+			<a href="#">Font Categories</a>
 			<button>Subscribe to Newsletter</button>
 		</div>	
 	</div>
-	<center>
+	<center> 
 		<h2>CARDS</h2>
 	</center>
 	<div class="container">
@@ -46,8 +47,22 @@
 			</div>
 		</div>
 	</div>
-
-
 	<script src="https://kit.fontawesome.com/15bc5276a1.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		let toggle = document.getElementsByClassName('menu-toggle')[0];
+		let header_menu = document.getElementsByClassName('header-menu')[0];
+		toggle.innerHTML = "<i class='fa-solid fa-angle-down'></i>";
+
+		toggle.addEventListener('click', () =>{
+			if (header_menu.style.display === "block"){
+				toggle.innerHTML = "<i class='fa-solid fa-angle-down'></i>";
+				header_menu.style.display = "none"
+			}else{
+				toggle.innerHTML = "<i class='fa-solid fa-angle-up'></i>";
+				header_menu.style.display = "block";
+			}
+		})
+
+	</script>
 </body>
 </html>
