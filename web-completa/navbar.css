@@ -1,0 +1,74 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Open Sans', sans-serif;
+  	/*font-family: 'PT Sans', sans-serif;*/
+ }
+
+ .navbar ul {
+    display: flex;  /* solo flex, sin wrap. Direction es por defecto wrap */
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    color: white;
+ }
+
+ .navbar li {
+    list-style-type: none; 
+    padding: 1rem;
+ }
+
+ .navbar a {
+    text-decoration: none;
+    color: white;
+ }
+
+ .navbar-logo {
+    flex: 1; /*flex-grow, como solo está en el logo, le da mas espacio que al resto*/
+            /* Which forces the flex item to take 100% of free space of the container. */
+    font-size: 1.5rem;
+    user-select: none;
+ }
+
+ .navbar-links:hover  {
+    background-color: cyan;
+ }
+
+ .navbar-links:hover a {
+    color: black;
+ }
+
+ .navbar-toggle {
+    display: none;
+ }
+
+ @media(max-width: 600px) {
+    .navbar ul {
+        flex-wrap: wrap; /* wrap activado solo en 600px */
+        flex-direction: column;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+ }
+
+ @media(min-width: 600px){
+    .navbar ul {
+        flex-wrap: nowrap; /* wrap activado solo en 600px */
+        flex-direction: row;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-links {
+        display: block;
+    }  
+ }
