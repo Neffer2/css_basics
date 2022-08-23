@@ -117,8 +117,8 @@ body {
 .screen-game {
     border: 10px inset;
     border-radius: 20px;
-    flex-basis: 88%;
-    width: 95%;
+    flex-basis: 86%;
+    width: 98%;
     background-color: greenyellow;
     color: white;
     text-align: center;
@@ -127,8 +127,13 @@ body {
 
 .screen-buttons {
     text-align: center;
-    margin: 8px;
+    margin: auto;
     color: black;
+}
+
+.btn-screen {
+    margin-right: 30px;
+    font-size: 16px;
 }
 
 /* --- */
@@ -183,6 +188,7 @@ body {
     background-color: cornsilk;
     box-shadow: 2px 2px saddlebrown;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 @media(min-width: 940px){
@@ -205,3 +211,26 @@ body {
         display: none;
     }
 }
+
+/* controllers  */
+
+.btn-controller {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: cornsilk;
+    box-shadow: 2px 2px saddlebrown;
+    margin: 5px 0;
+}
+
+.controllers-container{
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* *** */
